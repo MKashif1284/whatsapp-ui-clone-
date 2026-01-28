@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app {
+    width: 360px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Header */
+.header {
+    background: #075E54;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #075E54;
+    color: #cfd8dc;
+    padding-bottom: 10px;
+}
+
+.tabs span {
+    cursor: pointer;
+}
+
+.tabs .active {
+    color: white;
+    border-bottom: 3px solid #25D366;
+    padding-bottom: 5px;
+}
+
+.bold {
+    background: #eee;
+    border: 1px solid white;
+    font-size: 12px;
+    color: #075E54;
+    border-radius: 50%;
+}
+
+/* Chat List */
+.chat-list {
+    padding: 10px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.chat img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    flex: 1;
+}
+.active-chat img{
+    border: 3px solid #25d365a9;
+    padding: 1px;
+}
+.chat-info h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.chat-info p {
+    font-size: 13px;
+    color: gray;
+}
+
+.fa-heart {
+    background-color: red;
+}
+
+.time {
+    font-size: 12px;
+    color: gray;
+}
+
+.time.green {
+    color: #25D366;
+}
+
+.badge {
+    background: #25D366;
+    color: white;
+    font-size: 12px;
+    padding: 4px 7px;
+    border-radius: 50%;
+}
+
+/* Floating Button */
+.fab {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
